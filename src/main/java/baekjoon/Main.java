@@ -1,6 +1,6 @@
 package baekjoon;
 
-import baekjoon.solutions.Problem1026;
+import baekjoon.cpc_solutions.Problem1026;
 
 /**
  * Hello world!

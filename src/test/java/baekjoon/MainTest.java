@@ -4,9 +4,6 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple Main.
- */
 public class MainTest 
 {
     /**
@@ -17,4 +14,8 @@ public class MainTest
     {
         assertTrue( true );
     }
+    
+    public static void main(String[] args) {
+		System.out.println("test123123123123");
+	}
 }

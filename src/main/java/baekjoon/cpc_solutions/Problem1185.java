@@ -1,10 +1,9 @@
-package baekjoon.solutions;
+package baekjoon.cpc_solutions;
 
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
-import java.util.Arrays;
 // 클래스
 public class Problem1185 {
     public Number solution() {
