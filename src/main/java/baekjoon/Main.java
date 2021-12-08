@@ -1,6 +1,6 @@
-package beakjoon;
+package baekjoon;
 
-import beakjoon.solutions.Problem1026;
+import baekjoon.solutions.Problem1026;
 
 /**
  * Hello world!

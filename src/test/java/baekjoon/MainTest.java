@@ -1,4 +1,4 @@
-package beakjoon;
+package baekjoon;
 
 import static org.junit.Assert.assertTrue;
 

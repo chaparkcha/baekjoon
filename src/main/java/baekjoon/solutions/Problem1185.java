@@ -1,4 +1,4 @@
-package beakjoon.solutions;
+package baekjoon.solutions;
 
 import java.util.Collections;
 import java.util.Iterator;
