@@ -1,6 +1,6 @@
 package baekjoon;
 
-import baekjoon.cpc_solutions.Problem1026;
+import baekjoon.cpc_solutions.Problem11729;
 
 /**
  * Hello world!
@@ -10,6 +10,6 @@ public class Main
 {
     public static void main( String[] args )
     {
-        System.out.println(new Problem1026().solution());
+        new Problem11729().solution();
     }
 }
