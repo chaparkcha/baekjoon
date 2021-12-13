@@ -45,7 +45,7 @@ public class Problem2447 {
 		}
 
 		if(!check3) {
-			System.out.println("3ì˜ ì œê³±ê·¼ì´ ì•„ë‹˜");
+			System.out.println("3?˜ ? œê³±ê·¼?´ ?•„?‹˜");
 		}
 
 		return check3;
