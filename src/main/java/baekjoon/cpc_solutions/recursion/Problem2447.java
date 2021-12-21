@@ -1,4 +1,4 @@
-package baekjoon.cpc_solutions;
+package baekjoon.cpc_solutions.recursion;
 
 import java.util.Arrays;
 import java.util.Scanner;
