@@ -14,6 +14,7 @@ public class Problem2231 {
 		for(int i=0; i<input; i++) {
             int sum = i;
             int x = i;
+
             while(x > 0) {
                 sum += x%10;
                 x /= 10;
