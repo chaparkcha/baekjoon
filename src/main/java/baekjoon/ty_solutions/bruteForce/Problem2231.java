@@ -9,30 +9,21 @@ public class Problem2231 {
 		int input = sc.nextInt();
 		sc.close();
 		
-		int x = 0;
-		boolean exit = false;
+		int result = 0;
 
-		for(int i=1;i<=input;i++) {
-			for(int j=1; j<=input;j++) {
-				for(int k=1;k<=input;k++) {
-					x = Integer.parseInt(i+""+j+""+k);
-					if(input == (x+i+j+k)) {
-						System.out.println(i+""+j+""+k+" String");
-						exit = true;
-						break;
-					}
-				}
-				if(exit) break;
-			}
-			if(exit) break;
-		}
+		for(int i=0; i<input; i++) {
+            int sum = i; //합
+            int x = i; //한 자리씩 구하기 위한..
+            while(x > 0) {
+                sum += x%10;
+                x /= 10;
+            }
+            if(sum == input) {
+            	result = i;
+                break;
+            }
+        }
 		
-		if(exit) {
-			System.out.println(x);
-		} else {
-			System.out.println("0");
-		}
-		
-		
+		System.out.println(result);
 	}
 }
