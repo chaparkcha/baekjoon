@@ -18,7 +18,7 @@ public class Problem2750 {
 		//자바에서 제공하는 정렬
 		int[] arr = arrOrigin.clone();
 		Arrays.sort(arr);
-		System.out.println("자바 제공 정");
+		System.out.println("자바 제공 정렬");
 		for(int val : arr) {
 			System.out.println(val);
 		}

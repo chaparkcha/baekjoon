@@ -26,29 +26,51 @@ public class Problem2751 {
 		}
 
 	}
+	/** 참고사이트
+	 * https://blog.naver.com/bakarim0309/222179740721
+	 * https://blog.naver.com/ddolddol9905/222450019989 
+	 */
 
 	public static void mergeSort(int start, int end) {
 		if (start < end) {
 			int mid = (start + end) / 2;
+			
 			mergeSort(start, mid);
 			mergeSort(mid + 1, end);
 
-			int valStrat = start;
-			int valMid = mid + 1;
+			int valStart = start;
+			int valMidStart = mid+1;
 			int valIndex = start;
-			int tempVal = 0;
-			while (valStrat <= mid || valMid <= end) {
-				if (valMid > end || (valStrat <= mid && arr2[valStrat] < arr2[valMid])) {
-					mergeArr[valIndex++] = arr2[valStrat++];
+			
+			while(valStart <= mid && valMidStart <= end) {
+				if(arr2[valStart] <= arr2[valMidStart]) {
+					mergeArr[valIndex] = arr2[valStart];
+					valIndex++;
+					valStart++;
 				} else {
-					mergeArr[valIndex++] = arr2[valStrat++];
+					mergeArr[valIndex] = arr2[valMidStart];
+					valIndex++;
+					valMidStart++;
 				}
 			}
 
-			for (int val : arr2) {
-				System.out.print(val + " ");
+			if(valStart > valMidStart) {
+				while(valMidStart <= end) {
+					mergeArr[valIndex] = arr2[valMidStart];
+					valIndex++;
+					valMidStart++;
+				}
+			} else {
+				while(valStart <= mid) {
+					mergeArr[valIndex] = arr2[valStart];
+					valIndex++;
+					valStart++;
+				}
 			}
-			System.out.println();
+			
+			for(int i = start; i <= end; i++) {
+				arr2[i] = mergeArr[i];
+			}
 		}
 
 	}
