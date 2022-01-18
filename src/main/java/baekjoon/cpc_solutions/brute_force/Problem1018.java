@@ -1,6 +1,5 @@
 package baekjoon.cpc_solutions.brute_force;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Problem1018 {
